@@ -1,0 +1,58 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<div class="card">
+    <section 
+    class="avatar"
+    style="background: url({{student.avatar_url}}) no-repeat center center / cover" ></section>
+    <section class="details">
+        <h3>Detalhes</h3>
+        <div class="item">
+            <div>Nome</div>
+            <div>{{student.name}}</div>
+        </div>
+
+        <div class="item">
+            <div>Email</div>
+            <div>{{student.email}}</div>
+        </div>
+
+        <div class="item">
+            <div>Aniversário</div>
+            <div>{{student.birth}}</div>
+        </div>
+
+        <div class="item">
+            <div>Ano escolar</div>
+            <div>{{student.school_level}}</div>
+        </div>
+
+        <div class="item">
+            <div>Carga horária semanal</div>
+            <div>{{student.amount_hours}}</div>
+        </div>
+
+        
+        <a href = "/students/{{student.id}}/edit" class = button>Editar</a>
+        <form id = "form-delete" method = "POST" action = "/students?_method=DELETE">
+            <input
+                type = "hidden"
+                name = "id"
+                value = {{student.id}} >
+            <button type = "submit">Deletar</button>
+        <form>
+        
+    </section>
+</div>
+
+<script>
+    const formDelete = document.querySelector("#form-delete")
+    formDelete.addEventListener("submit", function(event){
+        const confirmation = confirm("Deseja apagar tudo?")
+        if(!confirmation){
+            event.preventDefault()
+        }
+    })
+</script>
+
+{% endblock content %}

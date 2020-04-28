@@ -1,0 +1,72 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "avatar_url": "https://images.unsplash.com/photo-1574230951449-2635f5cb3bc6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+      "name": "Alfedro Gomes",
+      "email": "huiim@gmail.com",
+      "birth": 1092355200000,
+      "school_level": "2EM",
+      "amount_hours": "20"
+    },
+    {
+      "id": "2",
+      "avatar_url": "https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+      "name": "Luíza Azevedo",
+      "email": "huiim@gmail.com",
+      "birth": 1060732800000,
+      "school_level": "3EM",
+      "amount_hours": "22"
+    },
+    {
+      "id": "21",
+      "avatar_url": "https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+      "name": "Pedro Silva",
+      "email": "pedro@123.com",
+      "birth": 1015977600000,
+      "school_level": "2EM",
+      "amount_hours": "20"
+    },
+    {
+      "id": "211",
+      "avatar_url": "https://unsplash.com/photos/ZQdjQXz9ptE",
+      "name": "Creuza",
+      "email": "gtt@33.com",
+      "birth": -62035891200000,
+      "school_level": "2EM",
+      "amount_hours": "23"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "1",
+      "avatar_url": "https://images.unsplash.com/photo-1574230951449-2635f5cb3bc6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+      "name": "Claudio Alves",
+      "birth": 451440000000,
+      "scholarity": "Doutorado",
+      "class_type": "P",
+      "subjects": "Geografia, História",
+      "created_at": 1587494266119
+    },
+    {
+      "id": "3",
+      "avatar_url": "https://images.unsplash.com/photo-1559921914-ceb7a05db035?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+      "name": "Fernanda de Souza",
+      "birth": 807580800000,
+      "scholarity": "Mestrado",
+      "class_type": "P",
+      "subjects": "Química, Física",
+      "created_at": 1587494318150
+    },
+    {
+      "id": "4",
+      "avatar_url": "https://images.unsplash.com/photo-1564130987042-acbca1b51e8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=366&q=80",
+      "name": "Luiz Oliveira",
+      "birth": 641779200000,
+      "scholarity": "Superior",
+      "class_type": "D",
+      "subjects": "Física, Matemática, Química",
+      "created_at": 1587494351092
+    }
+  ]
+}

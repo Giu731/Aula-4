@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="/styleswebsite.css">
+        {% block head %}
+        <title></title>
+        {% endblock %}
+
+    </head>
+
+    <body>
+        <header>
+            <div class="links">
+                <a href="/teachers" alt="sobre professores">Teachers</a>
+                <a href="/students" alt="sobre alunos">Students</a>
+            </div>
+        </header>
+
+        {% block content %}{% endblock %}
+
+        <div class="links" id="links-footer">
+        {% for link in about.links %}
+            <a href="{{link.url}}" target="_blank">{{link.name}}</a>
+        {% endfor %}
+
+        </div>
+
+        <script src = "/scripts.js"></script>
+    </body>
+</html>

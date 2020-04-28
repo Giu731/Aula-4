@@ -1,0 +1,117 @@
+ <div class="item">
+            <div>Avatar URL</div>
+            <div>
+                <input
+                    type = "url"
+                    name = "avatar_url"
+                    placeholder = "http://"
+                    value = "{{student.avatar_url}}"
+                >
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Nome</div>
+            <div>
+                <input
+                    type = "text"
+                    name = "name"
+                    placeholder = "Nome do aluno"
+                    value = "{{student.name}}"
+
+                >
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Email</div>
+            <div>
+                <input
+                    type = "email"
+                    name = "email"
+                    placeholder = "Digite seu e-mail"
+                    value = "{{student.email}}"
+
+                >
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Data de nascimento</div>
+            <div>
+                <input
+                    type = "date"
+                    name = "birth"
+                    value = "{{student.birth}}"
+                >
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Ano escolar</div>
+            <div>
+                <select name = "school_level">
+                    <option 
+                        value = "5EF"
+                        {% if student.school_level == "5EF" %}
+                        selected
+                        {% endif %}>5° ano do Ensino Fundamental
+                    </option>
+                    <option 
+                        value = "6EF" 
+                        {% if student.school_level == "6EF" %}
+                        selected
+                        {% endif %}>6° ano do Ensino Fundamental
+                    </option>
+                    <option 
+                        value = "7EF"
+                        {% if student.school_level == "7EF" %}
+                        selected
+                        {% endif %}>7° ano do Ensino Fundamental
+                    </option>
+                    <option 
+                        value = "8EF"
+                        {% if student.school_level == "8EF" %}
+                        selected
+                        {% endif %}>8° ano do Ensino Fundamental
+                    </option>
+                     <option 
+                        value = "9EF"
+                        {% if student.school_level == "9EF" %}
+                        selected
+                        {% endif %}>9° ano do Ensino Fundamental
+                    </option>
+                     <option 
+                        value = "1EM"
+                        {% if student.school_level == "1EM" %}
+                        selected
+                        {% endif %}>1° ano do Ensino Médio
+                    </option>
+                     <option 
+                        value = "2EM"
+                        {% if student.school_level == "2EM" %}
+                        selected
+                        {% endif %}>2° ano do Ensino Médio
+                    </option>
+                     <option 
+                        value = "3EM"
+                        {% if student.school_level == "3EM" %}
+                        selected
+                        {% endif %}>3° ano do Ensino Médio
+                    </option>
+                </select>
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Carga horária semanal</div>
+            <div>
+                <input
+                    type = "number"
+                    name = "amount_hours"
+                    value = "{{student.amount_hours}}"
+                >
+            </div>
+        </div>
+
+        <button type = "submit">Enviar</button>
